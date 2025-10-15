@@ -1,0 +1,10 @@
+from math import factorial
+def strong(n):
+    s=0
+    temp = n
+    while temp > 0:
+        digit= temp%10
+        s+= factorial(digit)
+        temp//=10
+    return s==n
+print(strong(145))

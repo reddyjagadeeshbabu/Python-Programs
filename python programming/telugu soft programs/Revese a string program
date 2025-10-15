@@ -1,0 +1,37 @@
+"""
+string="python"
+rev=""
+for char in string:
+    rev = char + rev
+print(rev)"""
+
+
+
+"""# using slicing:
+text = input("enter the text:")
+rev = text[::-1]
+print(rev)
+
+
+# Using reversed() and join():
+
+text = input("enter the string")
+rev = "".join(reversed(text))
+print(rev)
+
+
+
+# using loop
+def rev_string(s):
+    rev=""
+    for char in s:
+        rev=char+rev
+    return rev
+text= input("enter the string")
+print(rev_string(text))
+"""
+        
+def rev_string(s):
+    return s[::-1]
+text=input("ente the text:") 
+print(rev_string(text))       

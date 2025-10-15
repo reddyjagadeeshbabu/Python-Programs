@@ -1,0 +1,40 @@
+# count occurrence of a character in a string;
+
+"""n="hello"
+print(n.count("l"))
+
+#### from collections import Counter:
+
+n="hello"
+counter = Counter(n)
+print(counter)
+#print(counter["l"])
+
+
+
+############# using sum() comprehension:   (important)
+
+s = "programming"
+ch = "o"
+print(sum(1 for c in s if c==ch))
+
+
+
+################  using comprehension  (using while loop)   ############################################ (most important)
+
+s="programming"
+ch ="m"
+count=0
+for c in s:
+    if c==ch:
+        count +=1
+print(count)
+"""
+
+# count  vowels in a string #@##############################################import
+
+def count_vowels(s):
+    vowels = "aeiouAAEIOU"
+    return sum( 1 for char in s if char in vowels)
+
+print(count_vowels("Interview"))

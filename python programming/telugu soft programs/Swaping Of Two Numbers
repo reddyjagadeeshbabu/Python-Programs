@@ -1,0 +1,47 @@
+# Swaping of two numbers:  with out using third variable:
+
+# using (unpack) tuple:
+"""
+a= int(input("enter the number:"))
+b= int(input("enter the number:"))
+a ,b = b, a
+print(a)
+print(b)
+
+
+
+# using map and .split() funcion:
+
+a,b = map(int,input("enter the a,b").split())
+a ,b = b, a
+print(a)
+print(b)
+
+
+#using third temp  variaebl:
+a= int(input("entert the a value:"))
+b=int(input("enter the b value:"))
+#temp =0
+temp = a
+a = b
+b = temp
+print(f"{a},{b}")
+
+
+#using Arthmetic operations:
+
+a,b = (map(int,input("enter a, b values:").split()))
+a= a+b
+b= a-b
+a=a-b
+print(f"after swapping{a},{b}")
+"""
+
+# using XOR operator:
+
+a,b=map(int, input("enter a, b values:").split())
+a=a^b
+b=a^b
+a=a^b
+print(f"after swapping{a},{b}")
+

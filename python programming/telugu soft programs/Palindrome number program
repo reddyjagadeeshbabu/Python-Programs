@@ -1,0 +1,25 @@
+####################################################
+"""
+# given number or string is palindrome or not:
+
+n = input("enter the number or string:")
+if n==n[::-1]:
+    print("palindrome")
+else:
+    print("not palindrome")
+     
+
+
+# given string is true or false
+
+s="hello"
+print(s ==  s[::-1])
+
+# given string is palindrom or not: ################# using ternarory operator #################
+
+s=input("enter the number:")
+print("palindrome" if s == s[::-1] else "not palindrome")"""
+
+
+
+

@@ -1,0 +1,18 @@
+###############################
+
+"""
+import math
+print(math.gcd(12,4))
+"""
+
+# Function using Euclidean Algorithm:
+
+def gcd(a,b):
+    while b:
+        a=b
+        b=a%b
+    return a
+print(gcd (48,12))
+
+
+

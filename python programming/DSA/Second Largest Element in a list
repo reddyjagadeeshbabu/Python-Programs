@@ -1,0 +1,17 @@
+# using set() +  sorted() :
+
+numbers = [12, 35, 1, 10, 34, 1]
+print(numbers)
+
+unique_sorted = sorted(numbers)   # remove duplicates and sort
+print(unique_sorted[-2])
+      
+      # or
+
+if len(unique_sorted) < 2:
+    print("No second largest element")
+else:                                                           
+    print("Second largest:", unique_sorted[-2])
+    
+    
+  

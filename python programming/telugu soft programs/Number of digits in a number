@@ -1,0 +1,24 @@
+#Number of digits in a number(without coverting to string)
+
+"""n=1234
+count = 0
+while n!=0:
+    n=n//10
+    count+=1
+print(count)"""
+
+#another type
+import math
+n=12345
+if n==0:
+    print(1)
+else:
+    print(math.floor(math.log10(n)+1))
+    
+    
+    
+    
+#Number of digits in a number(with coverting to string)
+#import math
+n=1233
+print(len(str(n)))

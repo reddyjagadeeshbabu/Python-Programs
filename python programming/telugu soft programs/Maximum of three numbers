@@ -1,0 +1,15 @@
+"""# Maximum of three numbers:
+
+a,b,c=10,20,30
+if a>b:
+    print("a is greaterthan b")
+elif a>c:
+    print ("a is greaterthan c")
+elif b>c:
+    print("b is graterthan c")
+else:
+    print("c is graterthan b")   """      
+    
+# using (max) function:
+a,b,c=10,20,30
+print(max(a,b,c))

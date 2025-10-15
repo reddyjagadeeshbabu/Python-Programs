@@ -1,0 +1,62 @@
+"""
+# given number is prime or not   
+num = int(input("enter the number"))
+for i in range(1, num):
+    if num%i==0:
+        print("not a prime number:")
+        break
+    else:
+        print("prime number:")
+
+#prime number program true or false
+        
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+print(is_prime(7))
+print(is_prime(10))
+
+
+primes =[]
+for possibleprime in range(2,21):
+
+    isprime = True
+    for num in range(2, possibleprime):       # waste program dont run this program
+        if possibleprime % num == 0:
+            isprime = False
+    if isprime:
+        primes.append(possibleprime)
+    
+    
+    
+# print first n prime numbers upto given range:
+    
+m= int(input("start number"))
+u= int(input("end number"))
+for num in range(1,u+1):        # int(n**0.5)+1
+    if num> 1:
+        for i in range(2, num):
+            if  num%i==0:
+                 break
+        else:
+            print(num)
+            """
+        
+# print prime number using loops: given range:
+
+def print_prime(n):
+    count = 0
+    num = 1               # nuvu anta number este akada numfi print avutundi
+    while count < n:
+        for i in range(2, num):
+            if num%i==0:
+                break
+        else:
+            print(num, end=" ")
+            count = count+1
+        num +=1
+print_prime(10)

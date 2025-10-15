@@ -1,0 +1,26 @@
+# true or false
+
+"""def is_armstrong(num):
+    s = str(num)
+    power = len(s)
+    return num == sum(int(d) ** power for d in s)
+n = int(input("enter armstronh number:"))
+print(is_armstrong(n))"""
+
+
+### with out using power function:
+
+n = int(input("enter the nunber:"))
+s=n
+b=len(str(n))
+sum1 = 0
+while n != 0:
+    r=n%10
+    sum1=sum1 + (r**b)
+    n=n//10
+if s== sum1:
+    print("armstrong ")
+else:
+    print("not armstrong")
+    
+    

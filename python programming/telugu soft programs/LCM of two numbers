@@ -1,0 +1,44 @@
+"""
+1) #using math.lcm()
+import math
+print(math.lcm(6,2))
+
+##########################(or)#########################
+import math
+
+num1,num2 = map(int,input("Enter first number: ").split())
+#num2 = int(input("Enter second number: "))
+
+print(math.lcm(num1, num2))
+
+2) #using math.gcd()
+import math
+
+a = 12
+b = 18
+
+lcm = abs(a * b) // math.gcd(a, b)
+print("LCM:", lcm)
+
+#3) using custom GCD + LCM Function:
+
+def gcd(a,b):
+    while b:
+        a=b
+        b=a%b
+    return a
+def lcm(a,b):
+    return(a*b)//gcd(a,b)
+print(lcm(6,2))
+
+#4) brute force method:
+a,b=12,18
+greater = max(a,b)
+while True:
+    if greater %a==0 and greater% b==0:
+        lcm = greater
+        break
+    greater = greater+ 1
+print(lcm)
+         """
+         

@@ -1,0 +1,33 @@
+#sum of given numbers 
+
+"""n=123
+total = 0
+while n!=0:
+    digit = n%10
+    total = total+digit
+    n= n//10
+print(total)
+
+
+# another type:
+import math
+n=123
+print(sum(map(int, str(n))))
+
+
+#product of a given numbers
+
+n=123
+total=1
+while n!=0:
+    digit = n%10
+    total = total * digit
+    n= n//10
+print(total)
+    """
+    
+# another mehod
+
+import math
+n=123
+print(math.prod(map(int, str(n))))

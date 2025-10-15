@@ -1,0 +1,11 @@
+import random
+
+while True:
+    num= random.randint(1,10)
+    guess = int(input("guess a number 1 t0 n:"))
+    print( guess,num)
+    if num == guess:
+        print("math the number it is amazing")
+        break;
+    else:
+        print("not matching")
